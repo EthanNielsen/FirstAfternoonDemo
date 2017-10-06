@@ -54,14 +54,31 @@
 		280EFACA1F8801290033236F /* FirstAfternoonDemo */ = {
 			isa = PBXGroup;
 			children = (
-				280EFACB1F8801290033236F /* AppDelegate.swift */,
-				280EFACD1F8801290033236F /* ViewController.swift */,
+				280EFADE1F8812A30033236F /* Controller */,
 				280EFACF1F8801290033236F /* Main.storyboard */,
 				280EFAD21F8801290033236F /* Assets.xcassets */,
 				280EFAD41F8801290033236F /* LaunchScreen.storyboard */,
-				280EFAD71F8801290033236F /* Info.plist */,
+				280EFADD1F88124C0033236F /* Settings */,
 			);
 			path = FirstAfternoonDemo;
+			sourceTree = "<group>";
+		};
+		280EFADD1F88124C0033236F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				280EFAD71F8801290033236F /* Info.plist */,
+			);
+			name = Settings;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		280EFADE1F8812A30033236F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				280EFACB1F8801290033236F /* AppDelegate.swift */,
+				280EFACD1F8801290033236F /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FirstAfternoonDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirstAfternoonDemo/New Group/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ctech.FirstAfternoonDemo;
@@ -290,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FirstAfternoonDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirstAfternoonDemo/New Group/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ctech.FirstAfternoonDemo;
