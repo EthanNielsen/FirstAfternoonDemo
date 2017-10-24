@@ -41,16 +41,50 @@ public class MediaPageController : UIViewController
         
         if (imageCounter == 0)
         {
-            viewImage.image = UIImage(name)
+            imageFrame.image = UIImage(named: "congrats")
         }
+        else if (imageCounter == 1)
+        {
+            imageFrame.image = UIImage(named: "Cow...")
+        }
+        else if (imageCounter == 2)
+        {
+            imageFrame.image = UIImage(named: "cow2")
+        }
+        else
+        {
+            
+        }
+        
+        imageCounter += 1
     }
     
+    @IBAction func soundButtonClick()
+    {
+        playMusicFile()
+        view.backgroundColor = color.createRandomColor()
+    }
     
+    @IBAction func sliderMethod()
+    {
+        let seekTime = Double (soundSlider.value)
+        soundPlayer?.currentTime = seekTime
+    }
     
-    
-    
-    
-    
+    private func playMusicFile() -> Void
+    {
+        if let isPlaying = soundPlayer?.isPlaying
+        {
+            if (isPlaying)
+            {
+                soundPlayer?.pause()
+            }
+            else
+            {
+                soundPlayer?.play()
+            }
+        }
+    }
     private func loadAudioFile() -> Void
     {
         if let soundURL = NSDataAsset(name: "WiiMusic")
@@ -72,9 +106,9 @@ public class MediaPageController : UIViewController
         
     }
     
-    
-    
-    
-    
+    @objc private func updateSlider () -> Void
+    {
+        soundSlider.value = Float ((soundPlayer?.currentTime)!)
+    }
 }
 
