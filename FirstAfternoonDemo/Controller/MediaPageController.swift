@@ -21,7 +21,29 @@ public class MediaPageController : UIViewController
         // do any additional setup after loading the view.
     }
     
+    public override func didReceiveMemoryWarning() -> Void
+    {
+        super.didReceiveMemoryWarning()
+    }
     
+    @IBAction func imageButtonClick() -> Void
+    {
+        changeImage()
+        view.backgroundColor = color.createRandomColor()
+    }
+    
+    private func changeImage() -> Void
+    {
+        if (imageCounter > 2)
+        {
+            imageCounter = 0
+        }
+        
+        if (imageCounter == 0)
+        {
+            viewImage.image = UIImage(name)
+        }
+    }
     
     
     
