@@ -14,6 +14,7 @@
 		280EFAD61F8801290033236F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280EFAD41F8801290033236F /* LaunchScreen.storyboard */; };
 		280EFAE01F88140A0033236F /* Settings in Resources */ = {isa = PBXBuildFile; fileRef = 280EFADF1F88140A0033236F /* Settings */; };
 		2836961B1F9FB23800DD6D02 /* MediaPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2836961A1F9FB23800DD6D02 /* MediaPageController.swift */; };
+		2836961E1F9FB9B700DD6D02 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2836961D1F9FB9B700DD6D02 /* ColorTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		280EFAD51F8801290033236F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280EFADF1F88140A0033236F /* Settings */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Settings; sourceTree = "<group>"; };
 		2836961A1F9FB23800DD6D02 /* MediaPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPageController.swift; sourceTree = "<group>"; };
+		2836961D1F9FB9B700DD6D02 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
+		283696201F9FBA0000DD6D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,10 @@
 		280EFACA1F8801290033236F /* FirstAfternoonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2836961C1F9FB99B00DD6D02 /* Model */,
 				280EFADE1F8812A30033236F /* Controller */,
 				280EFACF1F8801290033236F /* Main.storyboard */,
-				280EFAD21F8801290033236F /* Assets.xcassets */,
+				2836961F1F9FB9F100DD6D02 /* Resources */,
 				280EFAD41F8801290033236F /* LaunchScreen.storyboard */,
 				280EFADF1F88140A0033236F /* Settings */,
 			);
@@ -74,6 +78,23 @@
 				2836961A1F9FB23800DD6D02 /* MediaPageController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2836961C1F9FB99B00DD6D02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2836961D1F9FB9B700DD6D02 /* ColorTools.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2836961F1F9FB9F100DD6D02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				283696201F9FBA0000DD6D02 /* Info.plist */,
+				280EFAD21F8801290033236F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +173,7 @@
 				2836961B1F9FB23800DD6D02 /* MediaPageController.swift in Sources */,
 				280EFACE1F8801290033236F /* ViewController.swift in Sources */,
 				280EFACC1F8801290033236F /* AppDelegate.swift in Sources */,
+				2836961E1F9FB9B700DD6D02 /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/FirstAfternoonDemo/Settings/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FirstAfternoonDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ctech.FirstAfternoonDemo;
@@ -304,7 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/FirstAfternoonDemo/Settings/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FirstAfternoonDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ctech.FirstAfternoonDemo;

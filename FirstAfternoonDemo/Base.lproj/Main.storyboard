@@ -70,6 +70,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="EtQ-AH-6Nd"/>
                     </view>
+                    <connections>
+                        <outlet property="imageButton" destination="NTo-F9-Tsf" id="nf9-Ky-7JH"/>
+                        <outlet property="imageFrame" destination="joY-Rn-23F" id="RwR-pw-d2a"/>
+                        <outlet property="soundButton" destination="M8v-NN-8HM" id="8zZ-xh-4mi"/>
+                        <outlet property="soundSlider" destination="779-4n-CxF" id="Mho-Uc-u4N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hya-oa-ELI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
