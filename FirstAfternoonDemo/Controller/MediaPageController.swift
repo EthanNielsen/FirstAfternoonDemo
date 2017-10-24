@@ -40,7 +40,7 @@ public class MediaPageController : UIViewController
                     
                     try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
                     soundSlider.maximumValue = Float ((soundPlayer?.duration)!)
-                    Timer.sccheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+                    Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
             }
             catch
             {
