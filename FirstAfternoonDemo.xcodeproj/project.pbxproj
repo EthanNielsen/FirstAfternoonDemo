@@ -60,6 +60,7 @@
 		280EFACA1F8801290033236F /* FirstAfternoonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				28D81C991FA2588400FBD70E /* New Group */,
 				2836961C1F9FB99B00DD6D02 /* Model */,
 				280EFADE1F8812A30033236F /* Controller */,
 				280EFACF1F8801290033236F /* Main.storyboard */,
@@ -95,6 +96,13 @@
 				280EFAD21F8801290033236F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		28D81C991FA2588400FBD70E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
